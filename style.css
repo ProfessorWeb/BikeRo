@@ -1,0 +1,107 @@
+body {
+  margin: auto;
+  background: url(img/hero.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+/*Hero Section*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+video {
+  width: 100%;
+  min-width: 1280px;
+  height: auto;
+  min-height: 100vh;
+}
+header {
+  position: absolute;
+
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+header h1 {
+  font-size: 4.3em;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-align: center;
+}
+header h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+
+header .hero__btn_play {
+  margin-top: 30px;
+}
+header .hero__btn_play img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+header .hero__btn {
+  background-color: #f36;
+  color: white;
+  padding: 13px 50px;
+  border-radius: 6em;
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: 1.1em;
+}
+
+/*About-us Section*/
+#about-us {
+  background-color: #000000;
+  text-align: center;
+  color: white;
+
+  padding: 1rem 0 3rem 0;
+}
+
+#BUY {
+  margin: auto;
+}
+
+p {
+  width: 50%;
+  margin: auto;
+}
+
+/*class*/
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.custom {
+  width: 20%;
+  margin: auto;
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.877) !important;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
