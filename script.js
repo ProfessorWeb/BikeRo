@@ -77,6 +77,7 @@ const buyBike = function (value){
 
 window.location.href === 'https://dviroshere.github.io/BikeRo/buyBike.html' ? buyBike() : '';
 
+const aboutBtn = function(value){
 btnAbout.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -84,3 +85,7 @@ btnAbout.addEventListener('click', function (e) {
 
   id.scrollIntoView({ behavior: 'smooth' });
 });
+}
+
+window.location.href === 'https://dviroshere.github.io/BikeRo/' ? aboutBtn() : '';
+
