@@ -56,7 +56,8 @@ const bike7 = {
 
 const bike = [bike1, bike2, bike3, bike4, bike5, bike6, bike7];
 
-bike.forEach(function (value) {
+const buyBike = function (value){
+  bike.forEach(function (value) {
   const html = `<div class="card">
   <img src="${value.img}"  height="650" class="card-img-top" alt="...">
   <div class="card-body">
@@ -72,6 +73,9 @@ bike.forEach(function (value) {
 `;
   bikeStore.insertAdjacentHTML('beforebegin', html);
 });
+}
+
+window.location.href === 'https://dviroshere.github.io/BikeRo/buyBike.html' ? buyBike() : '';
 
 btnAbout.addEventListener('click', function (e) {
   e.preventDefault();
