@@ -56,9 +56,11 @@ const bike7 = {
 
 const bike = [bike1, bike2, bike3, bike4, bike5, bike6, bike7];
 
-const buyBike = function (value){
+const myPage = (call, url) => (window.location.href === `${url}` ? call() : ''); // function Arrow
+
+const buyBike = function (value) {
   bike.forEach(function (value) {
-  const html = `<div class="card">
+    const html = `<div class="card">
   <img src="${value.img}"  height="650" class="card-img-top" alt="...">
   <div class="card-body">
     <h1 class="card-title">${value.name}</h1>
@@ -71,21 +73,24 @@ const buyBike = function (value){
   </div>
 </div>
 `;
-  bikeStore.insertAdjacentHTML('beforebegin', html);
-});
-}
+    bikeStore.insertAdjacentHTML('beforebegin', html);
+  });
+};
 
-window.location.href === 'https://dviroshere.github.io/BikeRo/buyBike.html' ? buyBike() : '';
+window.location.href === 'https://dviroshere.github.io/BikeRo/buyBike.html'
+  ? buyBike()
+  : '';
 
-const aboutBtn = function(value){
-btnAbout.addEventListener('click', function (e) {
-  e.preventDefault();
+myPage(buyBike, 'https://dviroshere.github.io/BikeRo/buyBike.html'); // call function
 
-  const id = e.target;
+const aboutBtn = function () {
+  btnAbout.addEventListener('click', function (e) {
+    e.preventDefault();
 
-  id.scrollIntoView({ behavior: 'smooth' });
-});
-}
+    const id = e.target;
 
-window.location.href === 'https://dviroshere.github.io/BikeRo/' ? aboutBtn() : '';
+    id.scrollIntoView({ behavior: 'smooth' });
+  });
+};
 
+myPage(aboutBtn, 'https://dviroshere.github.io/BikeRo/'); // call function
